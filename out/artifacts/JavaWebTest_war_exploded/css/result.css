@@ -1,0 +1,56 @@
+.handler_area{
+  width: 100%;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+}
+.handler_area .title{
+  width: 100%;
+}
+.handler_area h3{
+  width: 50%;
+  height: 40px;
+  border-bottom: 1px solid #ccc;
+  margin: 0 auto;
+  padding:0 10px;
+  background-color: #ececec;
+  line-height: 40px;
+  font-weight: normal;
+  font-size: 18px;
+}
+.han_form{
+  width: 100%;
+  margin:20px auto 0;
+}
+.han_form ul{
+  width: 50%;
+  margin: 0 auto;
+}
+.han_form li{
+  position: relative;
+  width: 500px;
+  border: 1px solid #ccc;
+  font-size: 18px;
+  margin: 10px auto;
+}
+.han_form .submit{
+  width: 120px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #c81623;
+  margin: 20px 190px;
+  border: 0;
+  color: #fff;
+  font-size: 14px;
+}
+.han_form ul .time{
+  position: absolute;
+  right: 0;
+  top: 2px;
+}
+.han_form ul .clear{
+  position: absolute;
+  height: 25px;
+  line-height: 25px;
+  top: 22px;
+  background-color: rgb(24, 200, 231);
+}

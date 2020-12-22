@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sql 操作</title>
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/iconfont.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/ajax.js"></script>
+</head>
+<body>
+  <div class="handler_area">
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="myModal1">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">您确定要插入下列用户数据吗？</h4>
+          </div>
+          <div class="modal-body1"> 
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+            <button type="button" class="btn btn-primary" id="insert">确定</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="myModal2">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">您确定要删除下列用户吗？</h4>
+          </div>
+          <div class="modal-body2">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+            <button type="button" class="btn btn-primary" id="delete">确定</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="title">
+      <h3>数据库表person插入信息</h3>
+    </div>
+    <div class="han_form">
+      <form action="" method="post" id="insertForm">
+        <ul>
+          <li>
+            <label for="username1">username:</label>
+						<input type="text"  id="username1" name="username">
+            <span class="iconfont icon-jibenicon_guanbi-mian">username长度不正确，请重新输入</span>
+            <span class="iconfont icon-jibenicon_tongguo-mian">恭喜您格式正确</span>
+          </li>
+          <li>
+            <label for="name">name:</label>
+            <input type="text"  id="name" name="name">
+            <span class="iconfont icon-jibenicon_guanbi-mian">name长度不正确，请重新输入</span>
+            <span class="iconfont icon-jibenicon_tongguo-mian">恭喜您格式正确</span>
+          </li>
+          <li>
+            <label for="age">age:</label>
+            <input type="number"  id="age" name="age" >
+            <span class="iconfont icon-jibenicon_guanbi-mian">age不能为负数，请重新输入</span>
+            <span class="iconfont icon-jibenicon_tongguo-mian">恭喜您格式正确</span>
+          </li>
+          <li>
+            <label for="telenumber">telenumber:</label>
+            <input type="text"  id="telenumber" name="teleno">
+            <span class="iconfont icon-jibenicon_guanbi-mian">telenumber长度不正确，请重新输入</span>
+            <span class="iconfont icon-jibenicon_tongguo-mian">恭喜您格式正确</span>
+          </li>
+          <li>
+            <input type="button" value="插入" class="submit insert" data-toggle="modal" data-target="#myModal1">
+          </li>
+        </ul>
+       </form>
+    </div>
+    <div class="title">
+      <h3>数据库表user删除信息</h3>
+    </div>
+    <div class="han_form">
+      <form action="" method="post" id="deleteForm">
+        <ul>
+          <li>
+            <label for="username2">username:</label>
+						<input type="text"  id="username2" name="username">
+            <span class="iconfont icon-jibenicon_guanbi-mian">username长度不正确，请重新输入</span>
+            <span class="iconfont icon-jibenicon_tongguo-mian">恭喜您格式正确</span>
+          </li>
+          <li>
+            <input type="button" value="删除" class="submit delete" data-toggle="modal" data-target="#myModal2">
+          </li>
+        </ul>
+       </form>
+    </div>
+  </div>
+</body>
+</html>

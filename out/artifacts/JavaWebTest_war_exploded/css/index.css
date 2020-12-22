@@ -1,0 +1,54 @@
+.handler_area{
+  /* height: 520px; */
+  width: 100%;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+}
+.handler_area .title{
+  width: 100%;
+}
+.handler_area h3{
+  width: 50%;
+  height: 40px;
+  border-bottom: 1px solid #ccc;
+  margin: 0 auto;
+  padding:0 10px;
+  background-color: #ececec;
+  line-height: 40px;
+  font-weight: normal;
+  font-size: 18px;
+}
+.han_form{
+  width: 600px;
+  /* height: 400px; */
+  margin:20px auto 0;
+}
+.han_form li{
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.han_form label{
+  display: inline-block;
+  width: 100px;
+  height: 36px;
+  line-height: 36px;
+  text-align: right;
+}
+.icon-jibenicon_guanbi-mian{
+  display: none;
+  color: red;
+}
+.icon-jibenicon_tongguo-mian{
+  display: none;
+  color: green;
+}
+.han_form .submit{
+  width: 100px;
+  height: 24px;
+  line-height: 24px;
+  background-color: #c81623;
+  margin: 20px 110px;
+  border: 0;
+  color: #fff;
+  font-size: 14px;
+}
